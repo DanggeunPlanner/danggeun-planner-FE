@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import { NativeEventSource, EventSourcePolyfill } from "event-source-polyfill";
@@ -41,8 +41,6 @@ const MainHeader = ({ leftLink, leftSlot, title }) => {
   useEffect(() => {
     dispatch(__getAlarm());
   }, []);
-
-  console.log("테스트서버확인");
 
   //sse연결 여부
   const isSSE = localStorage.getItem("sse") === "connect" ? true : false;

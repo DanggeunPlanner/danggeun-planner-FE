@@ -7,14 +7,14 @@ import HelmetComponent from "./shared/HelmetComponent";
 
 function App() {
   //모바일 스크롤 문제 해결
-  function setScreenSize() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }
+  // function setScreenSize() {
+  //   let vh = window.innerHeight * 0.01;
+  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+  // }
 
-  useEffect(() => {
-    setScreenSize();
-  });
+  // useEffect(() => {
+  //   setScreenSize();
+  // });
 
   return (
     <>

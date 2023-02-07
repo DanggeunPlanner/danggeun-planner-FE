@@ -6,9 +6,9 @@ const GlobalStyles = createGlobalStyle`
     ${reset}
 
     //모바일 화면에 맞추기
-    :root {
+    /* :root {
        --vh: 100%;
-   }
+   } */
 
   * {
     box-sizing: border-box;
@@ -83,12 +83,12 @@ const GlobalStyles = createGlobalStyle`
     -webkit-tap-highlight-color : rgba(0,0,0,0);
 
   }
-
+/* 
   body {
-    /* position: fixed; */
+    position: fixed;
     overflow: hidden;
     touch-action: none;
-  }
+  } */
 
   a {
     color: inherit;
