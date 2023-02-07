@@ -45,8 +45,6 @@ baseURL.interceptors.response.use(
   (err) => {
     const { config, response } = err;
     const originalRequest = config;
-    console.log(response);
-    console.log(response?.data?.message);
 
     // 401 토큰만료 응답이오면 실행한다
     if (response?.data?.message === "Access Token이 만료되었습니다") {
@@ -88,7 +86,6 @@ baseURL.interceptors.response.use(
       localStorage.clear();
       window.dispatchEvent(new Event("storage"));
       window.location.href = "/";
-      console.log("로그아웃");
     }
 
     return Promise.reject(err);
