@@ -166,6 +166,8 @@ const StCalendarStyle = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100%;
+  //모바일 100
+  /* height: calc(var(--vh, 1vh) * 100); */
   padding: 0 24px 28px 24px;
 `;
 
