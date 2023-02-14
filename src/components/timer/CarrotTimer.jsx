@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import useTimer from "../../hooks/useTimer";
 import { timeStamp } from "../planner/time";
-import { IMAGES } from "../../constants";
+import { IMAGES } from "../../constants/index";
 
 import Button from "./TimerButton";
 import GetCarrot from "./GetCarrot";
@@ -30,8 +30,6 @@ const CarrotTimer = () => {
   const startTime = 1000 * 60 * 25;
   const restTime = 1000 * 60 * 5;
   const longRestTime = 1000 * 60 * 15;
-
-  const alarm = new Audio(require("../../assets/audio/alarm.mp3"));
 
   const { isClear, parsedTime, currentTime, timer, toggleTimer, setTimerTime } =
     useTimer(() => {
@@ -73,8 +71,8 @@ const CarrotTimer = () => {
     if (!currentTime && mode === "focusMode") {
       setCount(count + 1);
       focusModeDoneHandler();
-      alarm.play();
-      alarm.volume = 1;
+      IMAGES.alarm.play();
+      IMAGES.alarm.volume = 1;
     } else if (!currentTime && mode === "restMode") {
       restModeDoneHandler();
     }

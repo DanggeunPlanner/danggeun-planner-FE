@@ -124,4 +124,6 @@ export const IMAGES = {
   backEarth: require("../assets/images/web/back_earth.webp"),
   members: require("../assets/images/web/members.webp"),
   background: require("../assets/images/web/background.webp"),
+  //
+  alarm: new Audio(require("../assets/audio/alarm.mp3")),
 };
