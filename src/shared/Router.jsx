@@ -59,7 +59,7 @@ import RouteChangeTracker from "./RouterChangeTracker";
 import ErrorPage from "../pages/error/ErrorPage";
 //const ErrorPage = lazy(() => import("../pages/error/ErrorPage"));
 
-import PrivacyPage from "../pages/privacy/privacy.html";
+import PrivacyPage from "../pages/privacy/PrivacyPage";
 
 const Router = () => {
   const item = localStorage.getItem("accessToken");
@@ -108,7 +108,7 @@ const Router = () => {
                 element={<GroupInvitePage />}
               />
               <Route path="*" element={<ErrorPage />} />
-              <Route path="/privacy.html" element={<PrivacyPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
             </Route>
           ) : (
             <Route>
@@ -119,7 +119,7 @@ const Router = () => {
               <Route path="/kakao/login" element={<KakaoLoginPage />} />
               <Route path="/signup" element={<SignUpPage />} />
               <Route path="*" element={<ErrorPage />} />
-              <Route path="/privacy.html" element={<PrivacyPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
             </Route>
           )}
         </Routes>
