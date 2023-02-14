@@ -53,14 +53,14 @@ export const IMAGES = {
   todayBtnIcon: <TodayBtnIcon />,
 
   // 타이머 이미지
-  defalut: require("../assets/images/timer/default.png"),
-  step1: require("../assets/images/timer/step1.png"),
-  step2: require("../assets/images/timer/step2.png"),
-  step3: require("../assets/images/timer/step3.png"),
-  step4: require("../assets/images/timer/step4.png"),
-  step5: require("../assets/images/timer/step5.png"),
-  step6: require("../assets/images/timer/step6.png"),
-  rest: require("../assets/images/timer/rest.png"),
+  defalut: require("../assets/images/timer/default.webp"),
+  step1: require("../assets/images/timer/step1.webp"),
+  step2: require("../assets/images/timer/step2.webp"),
+  step3: require("../assets/images/timer/step3.webp"),
+  step4: require("../assets/images/timer/step4.webp"),
+  step5: require("../assets/images/timer/step5.webp"),
+  step6: require("../assets/images/timer/step6.webp"),
+  rest: require("../assets/images/timer/rest.webp"),
 
   // 플래너
   calendarIcon: <CalendarIcon />,
