@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
 const PrivacyPage = () => {
   return (
-    <>
+    <StLayout>
       <p>
         당근플래너 팀('https://www.dggnplanner.com/'이하 '당근플래너')은(는)
         「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와
@@ -217,8 +218,12 @@ const PrivacyPage = () => {
         ( 예시 ) - 20XX. X. X ~ 20XX. X. X 적용 (클릭)
         <br />( 예시 ) - 20XX. X. X ~ 20XX. X. X 적용 (클릭)
       </p>
-    </>
+    </StLayout>
   );
 };
 
 export default PrivacyPage;
+
+const StLayout = styled.div`
+  background-color: white;
+`;
